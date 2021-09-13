@@ -1,0 +1,115 @@
+<!DOCTYPE {{{ page.doctype || 'html' }}}>
+<html lang="{{ page.language || 'en' }}" xmlns:v="urn:schemas-microsoft-com:vml">
+    <head>
+        <meta charset="{{ page.charset || 'utf-8' }}">
+        <meta name="x-apple-disable-message-reformatting">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+        <!--<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">-->
+        <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand|Montserrat">-->
+        <style>
+body {
+    background-color: #e8ecf2;
+}
+hr {
+    background-color: #7190fc;
+}
+a {
+    text-decoration: underline 2px #7190fc !important;
+}
+#subject {
+    font-family: Quicksand, Sans-Serif;
+    font-weight: 700;
+}
+#content, #footer {
+    font-family: Montserrat, Sans-Serif;
+}
+#content li {
+    list-style-type: disc;
+    margin-left: 0.5rem;
+}
+#content ul {
+    padding-left: 1rem;
+    list-style-position: inside;
+}
+#content h2 {
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #7190fc;
+    color: #e8ecf2;
+    border-radius: 5px;
+    font-family: Quicksand, Sans-Serif;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+        </style>
+
+        <!--[if mso]>
+            <noscript>
+            <xml>
+            <o:OfficeDocumentSettings xmlns:o="urn:schemas-microsoft-com:office:office">
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+            </xml>
+            </noscript>
+            <style>
+            td,th,div,p,a,h1,h2,h3,h4,h5,h6 {font-family: "Segoe UI", sans-serif; mso-line-height-rule: exactly;}
+            </style>
+        <![endif]-->
+        <if condition="page.title">
+        <title>{{{ page.title }}}</title>
+        </if>
+        <if condition="page.css">
+        <style>{{{ page.css }}}</style>
+        </if>
+        <block name="head"></block>
+    </head>
+    <body class="{{ page.bodyClass }}">
+        <if condition="page.preheader">
+        <div class="hidden">{{{ page.preheader }}}&#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &zwnj;
+            &#160;&#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &zwnj;
+            &#160;&#847; &#847; &#847; &#847; &#847; </div>
+        </if>
+        <div role="article" aria-roledescription="email" aria-label="{{{ page.title || '' }}}" lang="{{ page.language || 'en' }}">
+
+
+            <div class="px-12 m-auto my-12 max-w-prose space-y-10">
+                <table id="header" class="flex-row-reverse table-fixed">
+                    <tr>
+                        <td id="subject" class="items-center m-4 text-4xl align-middle font-quicksand">
+                            {{{ page.title }}}
+                        </td>
+                        <td class="w-1/6">
+                            <img class="inline" src="https://cdn.discordapp.com/attachments/393469514886414336/885662702586982461/notesclub-transparent-large.png">
+                        </td>
+                    </tr>
+                </table>
+                <hr>
+
+
+                <!-- ACTUAL BODY GOES HERE -->
+                <block name="template"></block>
+
+
+                <div id="footer" class="items-center justify-center w-full">
+                    <table class="m-auto table-fixed">
+                        <tr>
+                            <td class="">
+                                <img class="inline" style="height: 5rem;" src="https://cdn.discordapp.com/attachments/393469514886414336/885662702586982461/notesclub-transparent-large.png">
+                            </td>
+                            <td class="text-black text-opacity-40">
+                                for anyone who has<br>
+                                or wants better notes
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
