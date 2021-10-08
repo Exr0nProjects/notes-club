@@ -30,10 +30,10 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@maizzle/framework@^3.0.0":
-  version "3.7.1"
-  resolved "https://registry.yarnpkg.com/@maizzle/framework/-/framework-3.7.1.tgz#e3ded788231ac93660743fde785c107a5c846bfc"
-  integrity sha512-3Sy24B4+Fb/KBWACWbCfot/K8fJiLnVg2QWI3bReP56XOOqbKgG9RIcPBLFRQSCUDcCDObfrEQ9Xximzct4gEg==
+"@maizzle/framework@^3.7.2":
+  version "3.7.2"
+  resolved "https://registry.yarnpkg.com/@maizzle/framework/-/framework-3.7.2.tgz#a755ef6c83b933dae592738dd073a9c307b7044b"
+  integrity sha512-WAK7fAAJtocLv4u9uP+oR1PwSXIhTEJL2Z3EE98VIM6MU+TMesyloGavLbvPUMcBp+NmbOk84z9hR5uxb8VirA==
   dependencies:
     browser-sync "^2.26.13"
     color-shorthand-hex-to-six-digit "^3.0.2"
